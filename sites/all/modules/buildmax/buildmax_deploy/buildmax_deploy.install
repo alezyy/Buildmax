@@ -33,5 +33,5 @@ function _buildmax_enable_modules() {
  * Enable Adminimal theme and menu helper, Features, Strongarm, VBO, Views
  */
 function buildmax_deploy_update_7100() {
-  _challenge_enable_modules();
+  _buildmax_enable_modules();
 }
