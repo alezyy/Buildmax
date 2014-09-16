@@ -5,7 +5,7 @@
  */
 
 function buildmax_deploy_install() {
-  $func_proto = 'challenge_deploy_update_';
+  $func_proto = 'buildmax_deploy_update_';
   for ($i = 7100; $i < 8000; $i++) {
     $func = $func_proto . $i;
     if (function_exists($func)) {
