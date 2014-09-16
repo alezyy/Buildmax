@@ -7,7 +7,7 @@ package = buildmax
 ;dependencies[] = features
 
 ; base test case
-files[] = challenge_deploy.test
+files[] = buildmax_deploy.test
 
 ; functional test cases. Those which are in the group tremblant_deploy should
 ; always be working and are tested by jenkins
