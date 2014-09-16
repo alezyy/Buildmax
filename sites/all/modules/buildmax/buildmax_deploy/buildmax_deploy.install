@@ -44,3 +44,10 @@ function buildmax_deploy_update_7101() {
   module_enable(array('floating_block'));
 }
 
+/**
+ * Deployment function for 1st deployment
+ * Enable Adminimal theme and menu helper, Features, Strongarm, VBO, Views
+ */
+function buildmax_deploy_update_7108() {
+  module_enable(array('floating_block'));
+}
