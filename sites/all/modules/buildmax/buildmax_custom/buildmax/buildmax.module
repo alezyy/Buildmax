@@ -1,0 +1,59 @@
+  <?php
+
+/* 
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+function buildmax_menu () {
+   
+  $items = array ();
+    
+      $items['homech/%'] = array(
+      'page callback' => 'homech_callback',
+      'page arguments' => array(1),
+      'access callback' => TRUE,
+  );
+   
+      /*
+      $items['challenge-entry'] = array(
+      'page callback' => 'challenge_entry_callback',
+      'page arguments' => array(1),
+      'access callback' => TRUE,
+  );
+      */
+      
+    return $items;
+}
+
+
+/**
+ * callback of /homepage
+ */
+function homech_callback($category){
+    
+    return theme('homech_template', array('category' => $category));
+}
+
+/**
+ *  callback of entry page
+ */
+/*
+function challenge_entry_callback(){
+  return theme('challenge-entry');
+}
+/*
+
+/**
+ * Implementation of hook_theme
+ * registering homech-page.tpl.php into theme registry
+ */
+function buildmax_theme($existing, $type, $theme, $path) {
+    return array (
+    'homech_template' => array (
+      'template' => 'homech-page' ,
+      'path' => drupal_get_path('theme', 'bootstrap_buildmax').'/templates',
+       )
+        ) ;
+}
