@@ -5,7 +5,7 @@ description = Buildmax module
 package = BuildMax
 
 ;dependencies[] = features
-
+dependencies[] = webform
 ; base test case
 files[] = buildmax.modules
 
