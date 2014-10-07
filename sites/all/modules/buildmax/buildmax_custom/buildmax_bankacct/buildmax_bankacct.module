@@ -63,6 +63,10 @@ function _buildmax_bankacct_get_view_options() {
 	return $items;
 }
 
+function buildmax_view_list() {
+    
+}
+
 
 
 
