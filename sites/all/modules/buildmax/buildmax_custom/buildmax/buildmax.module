@@ -111,3 +111,28 @@ function _buildmax_get_view_options() {
 	}
 	return $items;
 }
+
+/**
+ *  Function to add  cancel button in the webform
+ */
+
+function buildmax_form_alter(&$form, $form_state, $form_id) {
+  if (strpos($form_id, 'webform_client_form_') === 0 ) {
+    $form['actions']['reset'] = array(
+      '#type' => 'button',
+      '#value' => t('Cancel'),
+      '#weight' => 100,
+      '#validate' => array(),
+   //   '#attributes' => array('onclick' => 'this.form.reset(); return false;'),
+       '#attributes' => array('onClick' =>'document.location.href="/buildmax"'),
+);
+    
+  }
+  
+ 
+  
+  
+  
+}
+
+
